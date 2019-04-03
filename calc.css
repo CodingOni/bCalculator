@@ -101,6 +101,7 @@ button:nth-child(4n+4) {
 #decimal {
   font-size: 1.5em;
   color: #FF6600;
+  background-color: inherit;
 }
 
 
@@ -184,10 +185,10 @@ button:nth-child(4n+4) {
     }
 }
 
-.c {
-  background-color: red;
-}
 
-.ce {
-  background-color: green;
+
+[role="button"]:focus,
+[role="button"]:active {
+  border: 1px dotted black;
+  color: pink;
 }
