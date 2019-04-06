@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./calc.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>Disability Friendly Calculator</title>
+	</head>
+	<body>
+		 <h1 id="h1">Disability Friendly Calculator</h1>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button onclick="handleCommand()" onKeyPress="handleCommand()"  role="button" aria-pressed="false" class="operator addMore" aria-label="Clear" title="Clear" id="clear" class='c'>C</button>
+					<button  tabindex="0" role="button" aria-pressed="false" class="operator" aria-label="Backspace" title="Backspace" id="backspace">CE</button>
+					<button tabindex="1" role="button" aria-pressed="false" class="operator" aria-label="Perent" title="Perent" id="%">%</button>
+					<button tabindex="2" role="button" aria-pressed="false" class="operator" aria-label="Divide" title="Divide" id="/">&#247;</button>
+					<button tabindex="3" role="button" aria-pressed="false" class="number" id="7">7</button>
+					<button tabindex="4" role="button" aria-pressed="false" class="number" id="8">8</button>
+					<button tabindex="5" role="button" aria-pressed="false" class="number" id="9">9</button>
+					<button tabindex="6" role="button" aria-pressed="false" class="operator" aria-label="Multiply" title="Multiply" id="*">&times;</button>
+					<button tabindex="7" role="button" aria-pressed="false" class="number" id="4">4</button>
+					<button tabindex="8" role="button" aria-pressed="false" class="number addMore" title="Number 5" >5</button>
+					<button tabindex="9" role="button" aria-pressed="false" class="number" id="6">6</button>
+					<button tabindex="10" role="button" aria-pressed="false" class="operator" aria-label="Subtract" title="Subtract" id="-">-</button>
+					<button tabindex="11" role="button" aria-pressed="false" class="number" id="1">1</button>
+					<button tabindex="12" role="button" aria-pressed="false" class="number" id="2">2</button>
+					<button tabindex="13" role="button" aria-pressed="false" class="number" id="3">3</button>
+					<button tabindex="14" role="button" aria-pressed="false" class="operator" aria-label="Add" title="Add" id="+">+</button>
+					<button tabindex="15" role="button" aria-pressed="false" class="empty" id="empty"></button>
+					<button tabindex="16" role="button" aria-pressed="false" class="number" id="0">0</button>
+					<button  role="button"  class="operator" aria-label="Decimal" title="Decimal" id="decimal">.</button>
+					<button tabindex="18" role="button" aria-pressed="false" class="operator" aria-label="Equals" title="Equals" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="./calc.js"></script>
+	</body>
+</html>
