@@ -4,13 +4,11 @@ body {
   color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   background-position: 50% 50%;
   position: relative;
 }
 
 #h1 {
-  background-color: #003366;
   color: #FFFFCC;
   position: absolute;
   top:-30px;
@@ -140,8 +138,13 @@ button:nth-child(4n+4) {
 
 @media only screen and (min-width: 280px) {
     #container {
-       margin-left: 3em;
-       color: 	#FFFFCC;
+      margin-left: 1em;
+      color: #FFFFCC;
+      margin-top: 1em;
+    }
+
+    #h1{
+      display: none;
     }
 }
 
@@ -152,6 +155,11 @@ button:nth-child(4n+4) {
     }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 @media only screen and (min-width: 800px) {
     #container {
        margin-left: 200px;
